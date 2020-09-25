@@ -22,7 +22,10 @@ $spacers: map-merge(
       $spacer * 3,
     ),
     6: (
-      $spacer * 6,
+      $spacer * 4.5,
+    ),
+    7: (
+      $spacer * 5.5,
     ),
   ),
   $spacers
