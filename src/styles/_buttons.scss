@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--black {
+    color: #fff;
+    background-color: #000;
+  }
+
+  &--hover-grey {
+    &:hover {
+      background-color: #dfdfdf;
+      color: #000;
+    }
+  }
+}
