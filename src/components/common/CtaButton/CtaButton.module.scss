@@ -1,0 +1,19 @@
+.ctaButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.arrow {
+  height: 15px;
+}

@@ -3,7 +3,7 @@ import React from "react";
 import "./Footer.scss";
 
 import { Link } from "gatsby";
-
+import CtaButton from "@common/CtaButton/CtaButton";
 import {
   FaFacebookSquare,
   FaYoutube,
@@ -12,7 +12,6 @@ import {
 } from "react-icons/fa";
 
 import logo from "../../../images/shared/logo-white.svg";
-import arrowRight from "../../../images/shared/arrow-white.svg";
 
 const Footer = () => {
   return (
@@ -71,14 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-3 offset-md-4 footer__col">
-            <Link to="/">
-              <div className="d-flex justify-content-between footer__cta">
-                <span>Get an invite</span>
-                <div>
-                  <img src={arrowRight} alt="arrow" />
-                </div>
-              </div>
-            </Link>
+            <CtaButton text="Get an invite" />
             <p className="footer__copyright">
               Copyright 2019. All Rights Reserved
             </p>

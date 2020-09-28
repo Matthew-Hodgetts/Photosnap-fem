@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Story.module.scss";
 import { Link } from "gatsby";
 
-import arrow from "../../../images/shared/arrow-white.svg";
+import CtaButton from "@common/CtaButton/CtaButton";
 
 const Story = ({ link, date, title, author, imgUrl, imgAlt }) => {
   return (
@@ -14,16 +14,7 @@ const Story = ({ link, date, title, author, imgUrl, imgAlt }) => {
           <h3 className={styles.title}>{title}</h3>
           <span className={styles.author}>by {author}</span>
           <div className={styles.divider}></div>
-          <div className="d-flex justify-content-between align-items-center">
-            <span className={styles.read}>Read story</span>
-            <img
-              src={arrow}
-              alt="read more"
-              className={styles.arrow}
-              //   eslint-disable-next-line
-              alt={`Read story: ${title}`}
-            />
-          </div>
+          <CtaButton text="Get an invite" />
         </div>
       </Link>
     </div>
