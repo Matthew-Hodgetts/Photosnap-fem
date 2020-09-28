@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-3 footer__col">
             <Link to="/">
-              <img src={logo} alt="photosnap logo" />
+              <img src={logo} alt="photosnap logo" className="mb-3" />
             </Link>
             <div className="footer__socials">
               <a
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
           <div className="col-md-3 offset-md-4 footer__col">
             <CtaButton text="Get an invite" />
-            <p className="footer__copyright">
+            <p className="footer__copyright mt-3">
               Copyright 2019. All Rights Reserved
             </p>
           </div>
