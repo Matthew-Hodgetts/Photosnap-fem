@@ -14,7 +14,7 @@ const Story = ({ link, date, title, author, imgUrl, imgAlt }) => {
           <h3 className={styles.title}>{title}</h3>
           <span className={styles.author}>by {author}</span>
           <div className={styles.divider}></div>
-          <CtaButton text="Get an invite" />
+          <CtaButton text="Read story" />
         </div>
       </Link>
     </div>

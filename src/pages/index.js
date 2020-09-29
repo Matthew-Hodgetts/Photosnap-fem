@@ -6,6 +6,7 @@ import SEO from "@common/Seo/Seo";
 import FeatureRow from "@common/FeatureRow/FeatureRow";
 import Stories from "@common/Stories/Stories";
 import Story from "@common/Story/Story";
+import IconsRow from "@common/IconsRow/IconsRow";
 
 import img1 from "../images/home/create-and-share.jpg";
 import img2 from "../images/home/beautiful-stories.jpg";
@@ -15,6 +16,35 @@ import storyImg1 from "../images/home/mountains.jpg";
 import storyImg2 from "../images/home/cityscapes.jpg";
 import storyImg3 from "../images/home/18-days-voyage.jpg";
 import storyImg4 from "../images/home/architecturals.jpg";
+
+import responsive from "../images/features/responsive.svg";
+import unlimited from "../images/features/no-limit.svg";
+import embed from "../images/features/embed.svg";
+
+const iconFeatures = [
+  {
+    title: "100% Responsive",
+    text:
+      "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+    img: responsive,
+    altText: "100% Responsive",
+  },
+  {
+    title: "No Photo Upload Limit",
+    text:
+      "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+    img: unlimited,
+    altText: "No Photo Upload Limit",
+    titleMarginTop: "84px",
+  },
+  {
+    title: "Available to Embed",
+    text:
+      "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
+    img: embed,
+    altText: "Available to Embed",
+  },
+];
 
 const IndexPage = () => (
   <Layout>
@@ -68,6 +98,7 @@ const IndexPage = () => (
         imgAlt="Book by sammy brookes"
       />
     </Stories>
+    <IconsRow iconFeatures={iconFeatures} />
   </Layout>
 );
 

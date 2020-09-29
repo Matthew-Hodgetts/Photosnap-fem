@@ -1,0 +1,21 @@
+.iconFeature {
+  position: relative;
+  text-align: center;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  opacity: 0.6;
+  font-size: 1rem;
+}
