@@ -46,9 +46,11 @@ const FeatureRow = ({
             <div className={`feature-row__content ${highlight} `}>
               <h2 className="feature-row__title">{title}</h2>
               <p className="feature-row__text my-3">{text}</p>
-              <Link to={linkUrl}>
-                {linkText} <BsArrowRight />{" "}
-              </Link>
+              {linkUrl && (
+                <Link to={linkUrl}>
+                  {linkText} <BsArrowRight />{" "}
+                </Link>
+              )}
             </div>
           </div>
           <div
@@ -65,7 +67,6 @@ FeatureRow.defaultProps = {
   title: "Title here",
   text: "Lorem ipsum dolor sit amet....",
   linkText: "Text for link",
-  linkUrl: "/",
   imgUrl: "https://via.placeholder.com/830x650",
   white: false,
   alternate: false,

@@ -1,5 +1,5 @@
 .ctaButton {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.75rem;
@@ -7,6 +7,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  max-width: 168px;
 
   &:hover {
     color: #fff;
@@ -15,5 +16,6 @@
 }
 
 .arrow {
+  margin-left: 10px;
   height: 15px;
 }
