@@ -6,6 +6,10 @@
   font-weight: 700;
   letter-spacing: 2px;
   transition: all 0.3s ease;
+  border: none;
+  &.d-block {
+    width: 100%;
+  }
 
   &:hover {
     text-decoration: none;
@@ -14,6 +18,11 @@
   &--black {
     color: #fff;
     background-color: #000;
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #000;
   }
 
   &--hover-grey {
