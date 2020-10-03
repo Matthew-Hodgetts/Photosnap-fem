@@ -6,6 +6,8 @@ import SEO from "@common/Seo/Seo";
 import FeatureRow from "@common/FeatureRow/FeatureRow";
 import Cta from "@common/Cta/Cta";
 import Plans from "@components/pricing/Plans/Plans";
+import Compare from "@components/pricing/Compare/Compare";
+
 import hero from "../images/pricing/hero.jpg";
 
 const PricingPage = () => {
@@ -19,6 +21,7 @@ const PricingPage = () => {
         special
       />
       <Plans />
+      <Compare />
       <Cta title="We're in beta. Get your invite today!" />
     </Layout>
   );
