@@ -29,14 +29,16 @@
 
   li {
     a {
+      display: inline-block;
       color: #fff;
       font-weight: 700;
       letter-spacing: 1px;
       font-size: 0.9rem;
-      padding: 1.75rem 0;
-
-      &:first-of-type {
-        padding-top: 0;
+      padding: 0.25rem 0;
+      transition: opacity 0.3s ease;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.5;
       }
     }
   }

@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-3 footer__col">
             <Link to="/">
-              <img src={logo} alt="photosnap logo" className="mb-3" />
+              <img src={logo} alt="photosnap logo" className="mb-3 mb-md-4" />
             </Link>
             <div className="footer__socials">
               <a
