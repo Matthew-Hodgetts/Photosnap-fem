@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-3 offset-md-4 footer__col">
-            <CtaButton text="Get an invite" />
+            <CtaButton text="Get an invite" maxWidth={true} />
             <p className="footer__copyright mt-3">
               Copyright 2019. All Rights Reserved
             </p>

@@ -2,8 +2,7 @@ import React from "react";
 
 import "./FeatureRow.scss";
 
-import { Link } from "gatsby";
-import { BsArrowRight } from "react-icons/bs";
+import CtaButton from "@common/CtaButton/CtaButton";
 
 const FeatureRow = ({
   title,
@@ -46,10 +45,13 @@ const FeatureRow = ({
             <div className={`feature-row__content ${highlight} `}>
               <h2 className="feature-row__title">{title}</h2>
               <p className="feature-row__text my-3">{text}</p>
-              {linkUrl && (
-                <Link to={linkUrl}>
-                  {linkText} <BsArrowRight />{" "}
-                </Link>
+              {linkText && (
+                <CtaButton
+                  text={linkText}
+                  url={linkUrl}
+                  maxWidth
+                  white={white}
+                />
               )}
             </div>
           </div>

@@ -1,18 +1,22 @@
 import React from "react";
 
-import styles from "./CtaButton.module.scss";
+import "./CtaButton.scss";
 
 import { Link } from "gatsby";
 
 import arrow from "../../../images/shared/arrow-white.svg";
+import arrowBlack from "../../../images/shared/arrow-black.svg";
 
-const CtaButton = ({ text, url, altText }) => {
+const CtaButton = ({ text, url, altText, maxWidth, white }) => {
   return (
-    <Link to={url} className={styles.ctaButton}>
+    <Link
+      to={url}
+      className={maxWidth ? "ctaButton ctaButton--mw" : "ctaButton"}
+    >
       <span>{text}</span>
       <img
-        src={arrow}
-        className={styles.arrow}
+        src={white ? arrowBlack : arrow}
+        className="ctaButton__arrow"
         //   eslint-disable-next-line
         alt={altText}
       />
@@ -23,7 +27,7 @@ const CtaButton = ({ text, url, altText }) => {
 CtaButton.defaultProps = {
   text: "Get an invite",
   url: "/",
-  altText: "",
+  altText: "Arrow",
 };
 
 export default CtaButton;
