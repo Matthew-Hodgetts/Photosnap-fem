@@ -6,8 +6,9 @@ const IconsRow = ({ iconFeatures }) => {
     <section className="icons-row py-6">
       <div className="container">
         <div className="row">
-          {iconFeatures.map((f) => (
+          {iconFeatures.map((f, index) => (
             <IconFeature
+              key={`${index}-${f.title}`}
               title={f.title}
               text={f.text}
               img={f.img}

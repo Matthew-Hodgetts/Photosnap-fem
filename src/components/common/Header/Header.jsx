@@ -36,12 +36,12 @@ const Header = ({ toggleNav }) => (
             Get an invite
           </Link>
           <button
-            class="hamburger d-lg-none"
+            className="hamburger d-lg-none"
             type="button"
             onClick={() => toggleNav(true)}
           >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
             </span>
           </button>
         </div>
