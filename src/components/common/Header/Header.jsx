@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import styles from "./Header.module.scss";
 import logo from "../../../images/shared/logo.svg";
 
-const Header = () => (
+const Header = ({ toggleNav }) => (
   <header className={styles.header}>
     <div className="container py-2">
       <div className="row align-items-center">
@@ -35,7 +35,11 @@ const Header = () => (
           >
             Get an invite
           </Link>
-          <button class="hamburger d-lg-none" type="button">
+          <button
+            class="hamburger d-lg-none"
+            type="button"
+            onClick={() => toggleNav(true)}
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
